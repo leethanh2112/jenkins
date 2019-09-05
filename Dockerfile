@@ -6,7 +6,6 @@ RUN apt-get update
 USER ${user}
 
 COPY config.xml /usr/share/jenkins/ref/config.xml
-COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 COPY jobs /usr/share/jenkins/ref/jobs
 COPY secrets /usr/share/jenkins/ref/secrets
 COPY users /usr/share/jenkins/ref/users
